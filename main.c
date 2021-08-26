@@ -196,7 +196,7 @@ void lls_start(uint ts, uint object, uint32_t x , uint32_t y ,  uint32_t gscore 
     
     if (visit[curr_state.x][curr_state.y]==0){
       undo_log_write(&visit[curr_state.x][curr_state.y], visit[curr_state.x][curr_state.y]);
-      visit[curr_state.x][curr_state.y]==1;
+      visit[curr_state.x][curr_state.y]=1;
       
       if (is_valid_neighbor(curr_state.x +1 , curr_state.y)){    
         state next_state;
